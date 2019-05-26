@@ -1,0 +1,21 @@
+.sidebar {
+  float: left;
+  width: 20%;
+  height: 100%;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: #263238;
+  position: fixed;
+}
+
+.sidebar > ul > h3 {
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-top: 10px;
+}

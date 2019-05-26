@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Main from "./component/Main";
+import Sidebar from "./component/Sidebar";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    let urlList = [
+      {
+        name: `Github`,
+        url: `https://github.com/naushad-madakiya`,
+        color: `white`
+      },
+      {
+        name: `Instagram`,
+        url: `https://instagram.com/iamnaush`,
+        color: `white`
+      },
+      {
+        name: `Twitter`,
+        url: `https://twitter.com/naushadmadakiya`,
+        color: `white`
+      }
+    ];
+
+    return (
+      <div className="App">
+        <Sidebar urlList={urlList} />
+        <Main />
+      </div>
+    );
+  }
 }
 
 export default App;
