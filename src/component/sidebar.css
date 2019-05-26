@@ -6,9 +6,10 @@
   font-weight: 400;
   background-color: #263238;
   position: fixed;
+  padding-left: 10px;
 }
 
-.sidebar > ul > h3 {
+.sidebar > h3 {
   color: white;
 }
 

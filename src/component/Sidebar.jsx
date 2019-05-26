@@ -1,6 +1,7 @@
 import React from "react";
 import "./sidebar.css";
 import LinkComponent from "./LinkComponent";
+import NewsLetterForm from "./NewsLetterForm";
 
 export default class Sidebar extends React.Component {
   render() {
@@ -22,10 +23,9 @@ export default class Sidebar extends React.Component {
 
     return (
       <div className="sidebar">
-        <ul>
-          <h3> Social Media Links</h3>
-          {linkContainer}
-        </ul>
+        <h3> Social Media Links</h3>
+        <ul>{linkContainer}</ul>
+        <NewsLetterForm />
       </div>
     );
   }
